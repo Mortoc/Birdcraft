@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Birdcraft</title>
+</head>
+<body>
+    <div id="main"></div>
+    <script type="module">
+        import init, { run } from './pkg/birdcraft.js';
+        async function start() {
+            await init();
+            run();
+        }
+        start();
+    </script>
+</body>
+</html>
